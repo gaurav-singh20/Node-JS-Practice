@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button id="mybtn"> try it</button>
+  <p id="demo"></p>
+  <script>
+    var x=document.getElementById("mybtn");
+    // button.addEventListener(action,function ot be called)
+    x.addEventListener("mouseover",myfunc1);
+    x.addEventListener("click",myfunc2);
+    x.addEventListener("mouseout",myfunc3);
+
+    function myfunc1(){
+      document.getElementById("demo").innerHTML += "mouse over! <br>";
+    }
+    function myfunc2(){
+      document.getElementById("demo").innerHTML += "mouse clicked! <br>";
+    }
+    function myfunc3(){
+      document.getElementById("demo").innerHTML += "mouse out! <br>";
+    }
+  </script>
+</body>
+</html>
